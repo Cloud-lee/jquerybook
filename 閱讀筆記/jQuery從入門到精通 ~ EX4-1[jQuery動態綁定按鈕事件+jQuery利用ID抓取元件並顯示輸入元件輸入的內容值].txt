@@ -1,0 +1,35 @@
+jQuery從入門到精通 ~ EX4-1[jQuery動態綁定按鈕事件+jQuery利用ID抓取元件並顯示輸入元件輸入的內容值]
+
+jQuery動態綁定按鈕事件+jQuery利用ID抓取元件並顯示輸入元件輸入的內容值
+
+note:
+	01.jQuery動態綁定按鈕事件
+		$("input[type='button']").click();
+	
+	02.jQuery利用ID抓取元件
+		$("#testInput")
+	
+	03.jQuery抓取輸入元件輸入的內容值
+		var inputValue = $("#testInput").val(); 
+
+程式內容:
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+		<title>ID选择器的示例</title>
+		<script type="text/javascript" src="../js/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript">
+		   $(document).ready(function(){
+				$("input[type='button']").click(function(){		//为按钮绑定单击事件
+					var inputValue = $("#testInput").val();  	//获取文本输入框的值
+					alert(inputValue);
+				});
+		   });
+		</script>
+	</head>
+
+	<body>
+	  <input type="text" id="testInput" name="test" value=""/>
+	  <input type="button" value="输入的值为"/>
+	</body>
+</html>

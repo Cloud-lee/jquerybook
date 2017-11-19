@@ -1,0 +1,37 @@
+jQuery從入門到精通 ~ EX3-2[JS抓取物件轉換成jQuery物件]
+
+JS抓取物件轉換成jQuery物件
+
+note:
+	01.JS透過元件ID取得物件變數
+		var domObj = document.getElementById("testp");
+		
+	02.JS取得物件變數後印出HTML內容
+		domObj.innerHTML
+		
+	03.JS抓取物件轉換成jQuery物件
+		var $jqueryObj = $(domObj);
+		
+	04.jQuery取得物件變數後印出HTML內容
+		$jqueryObj.html()
+
+程式內容:
+<html>
+	<head>
+		<title>DOM对象转换为jQuery对象</title>
+		<script src="js/jquery-1.11.1.min.js"></script>
+		<script>
+			$(document).ready(function(){
+				var domObj = document.getElementById("testp");
+				alert("使用DOM方法获取p节点的内容："+domObj.innerHTML);
+				var $jqueryObj = $(domObj);
+				alert("使用jQuery方法获取p节点的内容："+$jqueryObj.html());
+			})	
+		</script>
+	</head>
+
+	<body>
+		<h2>明日图书</h2>
+		<p id="testp">《JavaScript从入门到精通》</p>
+	</body>
+</html>

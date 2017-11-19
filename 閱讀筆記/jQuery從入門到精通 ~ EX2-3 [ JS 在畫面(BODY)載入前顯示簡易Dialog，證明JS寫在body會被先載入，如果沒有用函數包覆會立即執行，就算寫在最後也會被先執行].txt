@@ -1,0 +1,23 @@
+jQuery從入門到精通 ~ EX2-3 [ JS 在畫面(BODY)載入前顯示簡易Dialog，證明JS寫在body會被先載入，如果沒有用函數包覆會立即執行，就算寫在最後也會被先執行]
+
+
+JS 在畫面(BODY)載入前顯示簡易Dialog，證明JS寫在body會被先載入，如果沒有用函數包覆會立即執行，就算寫在最後也會被先執行
+
+程式內容:
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+		<title>无标题文档</title>
+	</head>
+
+	<body>
+		第一个JavaScript程序
+		
+		<script language="javascript">
+			alert("我要学JavaScript！");
+		</script>
+		
+	</body>
+</html>

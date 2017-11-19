@@ -1,0 +1,50 @@
+jQuery從入門到精通 ~ EX4-3[jQuery利用class取得物件+jQuery動態改變物件的CSS]
+
+jQuery利用class取得物件+jQuery動態改變物件的CSS
+
+note:
+	01.jQuery利用class取得物件
+		var $myClass = $(".myClass");
+	
+	02.jQuery動態改變物件的CSS
+		$myClass.css("background-color","#C50210");
+		$myClass.css("color","#FFF");
+	
+	03.css註解
+		border:1px solid #003a75;//DIV邊框粗度+邊框顏色
+		background-color:#cef;//DIV背景色
+	
+程式內容:
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+		<title>类名选择器的示例</title>
+		<style type="text/css">
+			div{
+				border:1px solid #003a75;
+				background-color:#cef;
+				margin:5px; 
+				height:35px; 
+				width:75px;
+				float:left;
+				font-size:12px;
+				padding:5px;
+		   }
+		</style>
+		<script type="text/javascript" src="../js/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				var $myClass = $(".myClass");  			 	//选取Dom元素
+				$myClass.css("background-color","#C50210");	//为选取的Dom元素设置背景颜色
+				$myClass.css("color","#FFF");				//为选取的Dom元素设置文字颜色
+			});
+		</script>
+
+	</head>
+
+	<body>
+		<div class="myClass">注意观察我的样式</div>
+		<div>我的样式是默认的</div>
+	</body>
+</html>

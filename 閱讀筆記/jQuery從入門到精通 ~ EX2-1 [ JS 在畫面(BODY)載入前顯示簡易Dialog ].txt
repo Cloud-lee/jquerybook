@@ -1,0 +1,19 @@
+jQuery從入門到精通 ~ EX2-1 [ JS 在畫面(BODY)載入前顯示簡易Dialog ]
+
+
+JS 在畫面(BODY)載入前顯示簡易Dialog，證明JS寫在head會被先載入，如果沒有用函數包覆會立即執行
+
+程式內容:
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>一段简单的JavaScript代码</title>
+		<script language="javascript">
+			window.alert("欢迎光临本网站");
+		</script>
+	</head>
+	<body>
+		<h3>这是一段简单的JavaScript代码。</h3>
+	</body>
+</html>

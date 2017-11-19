@@ -1,0 +1,32 @@
+jQuery從入門到精通 ~ EX3-1[第一個jQuery，在head引用jQuery lib 並 偵測BODY完成後(事件)執行一個無名函數]
+
+第一個jQuery，在head引用jQuery lib 並 偵測BODY完成後(事件)執行一個無名函數
+
+note:
+	01.jQuery取得元件語法 
+		$(元件名)
+		
+	02.jQuery元件事件函數實作語法
+		$(元件名).事件名稱(function(){});
+		
+	03.jQuery無名函數語法
+		function(){}
+	
+
+程式內容:
+<html>
+	<head>
+		<title>我的第一个jQuery脚本</title>
+		
+		<script src="js/jquery-1.11.1.min.js"></script>
+		
+		<script>
+			$(document).ready(function(){
+				alert("我的第一个jQuery脚本！");
+			});
+		</script>
+	</head>
+	
+	<body>
+	</body>
+</html>

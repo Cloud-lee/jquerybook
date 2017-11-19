@@ -1,0 +1,29 @@
+jQuery從入門到精通 ~ EX2-7 [ BODY 新增一個按鈕並綁定一個JS函數，當點擊按鈕觸發事件時，使用setTimeout功能實作等待3秒後呼叫window的close函數呼叫視窗(分頁)關閉 ]
+
+
+BODY 新增一個按鈕並綁定一個JS函數，當點擊按鈕觸發事件時，使用setTimeout功能實作等待3秒後呼叫window的close函數呼叫視窗(分頁)關閉0
+
+
+程式內容:
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+		
+		<title>使用window.setTimeout()方法关闭窗口</title>
+		
+		<script language="javascript">
+			function closeWindow(){
+				document.write("3秒钟后关闭该窗口！");
+				setTimeout("window.close()","3000");
+			}
+		</script>
+		
+	</head>
+
+	<body>
+		<input type="button" name="button" value="关闭窗口"  onclick="closeWindow()" />
+	</body>
+</html>
