@@ -1,0 +1,34 @@
+jQuery從入門到精通 ~ EX5-7[jQuery使用clone複製元素]
+
+jQuery使用clone複製元素
+
+note:
+
+程式內容:
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>复制节点</title>
+		<style>
+		body{
+			font-size:12px;
+		}
+		</style>
+		<script type="text/javascript" src="../js/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript">
+		  $(function() {
+				$("div p:eq(1)").bind("click",function() {  	//为按钮绑定单击事件
+					$(this).clone().insertAfter(this);		     //复制自己但不复制事件处理 
+				});
+			});
+		</script>
+	</head>
+	
+	<body>
+			<div>
+			<p title="明日科技">明日科技</p>
+			<p title="明日图书">明日图书</p>
+		</div>
+	</body>
+</html>
